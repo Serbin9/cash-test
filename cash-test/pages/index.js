@@ -10,8 +10,7 @@ export default function Index (){
         </Head>
         <h1> Next</h1>
         <p><Link href="/abouve"><a>Above</a></Link></p>
-        <p><Link href="/post"><a>Post</a></Link></p>
-        <p><Link href="/posts/[id]"></Link> </p>
+        <p><Link href="/posts"><a>Posts</a></Link></p>
         </MainLayout>
         
     )

@@ -11,7 +11,7 @@ export  function MainLayout ({children, title="Nex App"}){
         </Head>
         <nav>
         <Link href="/abouve"><a>Above</a></Link>
-        <Link href="/post"><a>Posts</a></Link>
+        <Link href="/posts"><a>Posts</a></Link>
         <Link href="/"><a>Home</a></Link>
         </nav>
         <main>

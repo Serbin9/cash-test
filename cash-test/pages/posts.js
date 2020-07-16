@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import  {MainLayout}  from './../componetnt/layout';
+import  {MainLayout}  from '../componetnt/layout';
 import Link from 'next/link'
+const API_KEY="2531bb022b1d4ac2a6bdb446c8bba7a5"
 
  function Post ({post}){
     return(
@@ -12,10 +13,10 @@ import Link from 'next/link'
 {/* <pre>{JSON.stringify(post.articles, null, 2)}</pre> */}
     <ul>
         {post.articles.map(article=>(<li key={article.publishedAt}>
-            <Link href={`post/${article.publishedAt}`}><a>{article.title}</a></Link>
-            <h2>{article.title}</h2>
+            <Link href={`post/[id]`} as={`post/${article.publishedAt}`}><a>{article.title}</a></Link>
+            {/* <h2>{article.title}</h2>
             <h3>{article.author}</h3>
-            <p>{article.description}</p>
+            <p>{article.description}</p> */}
         </li>))}
     </ul>
 </MainLayout>
