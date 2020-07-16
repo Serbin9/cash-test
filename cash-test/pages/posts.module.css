@@ -1,0 +1,17 @@
+.allPosts{
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+    display: flex;
+    text-align: center;
+    
+}
+.liStyle{
+    font-size: 30px;
+    font-weight:700;
+    list-style-type: none;
+}
+.forLink{
+text-decoration: none; 
+
+}
